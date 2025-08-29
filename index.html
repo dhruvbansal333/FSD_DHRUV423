@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+        td{
+            background-color: cyan;
+        }
+        th,td{
+            border: 1px solid hsl(300, 100%, 25%);
+            border-radius: 10px;
+            border-style: dashed;
+            text-align: center;
+            padding: 50px;
+            border-spacing: 10px;
+        }
+        td:nth-child(2){
+            background-color: rgb(144, 238, 144);
+        }
+        th:nth-child(1){
+            background-color: rgb(255, 182, 193);
+        }
+        td:hover{
+            background-color: yellow;
+        }
+        
+        
+    </style>
 </head>
 <body>
     <h1>Hello</h1>
@@ -12,6 +39,44 @@
     <h4>good evening</h4>
     <h5>good night</h5>
     <h6>good bye</h6>
+
+    <table style="width: 50%;"> 
+        <caption> student details </caption>
+        <tr>
+
+            <th colspan="2">name</th>
+            <th>roll no</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>xyz</td>
+            <td>125</td>
+        </tr>
+
+    </table>
+
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <dl>
+        <dt>item a</dt>
+        <dd>description a</dd>
+        <dt>item b</dt>
+        <dd>description b</dd>
+        <dt>item c</dt>
+        <dd>description c</dd>
+    </dl>
+
+    <ul>
+        <dl>
+            <dt>item 1</dt>
+            <dd>description 1</dd>
+        </dl>
+    </ul>
+
 
 </body>
 </html>
