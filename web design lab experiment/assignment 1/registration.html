@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Form Example</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <div class="form-container">
+     <h2>Registation form</h2>
+     <form>
+        
+        <label for ="name"> Full Name </label>
+        <input type="text" id="Name" name="name"
+        placeholder="enter your Name" required> <br><br>
+
+        <label for ="email">Email</label>
+        <input type="text" id="Email" name="email"
+        placeholder="enter your Email" required> <br><br>
+
+
+        <label for ="phone no">Phone No</label>
+        <input type="text" id="phone no" name="phone no"
+        placeholder="enter your Phone No" required> <br><br>
+
+        <div class="password">
+            <label for="password">Password </label>
+             <input type="password" id="Password" name="password"
+        placeholder="enter your password" required> <br><br>
+        
+        </div>
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Female">Female</label>
+            <label><input type="radio" name="gender" value="Male">Male</label>
+        </div>
+
+        <label for="country">Country</label>
+        <select name="country" id="country" required>
+            <option value="">select</option>
+            <option value="uk">uk</option>
+            <option value="india">india</option>
+            <option value="usa">usa</option>
+            <option value="canada">canada</option>
+        </select> <br><br>
+
+        <label for ="language">Language</label>
+        <input type="text" id="language" name="language"
+        placeholder="enter your Language" required> <br><br>
+
+        <button type="submit">Submit</button>
+     </form>
+    </div>
+</body>
+</html>
+
