@@ -1,79 +1,109 @@
+<!--Dhruv Bansal (2400320100423)-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ddd;
-            box-shadow: inset 0 0 5px #ccc  ;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Catalogue</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f6f6f6;
+padding: 20px;
+}
+h2 {
+text-align: center;
+color: #333;
+}
+table {
+width: 90%;
+margin: auto;
+border-collapse: collapse;
+background-color: #fff;
+box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+th, td {
+border: 1px solid #ccc;
+padding: 12px;
+text-align: center;
+}
+th {
+background-color: #eee;
+}
+img {
+width: 100px;
+height: auto;
+}
+.book-info {
+text-align: left;
+}
+.cart-btn img {
+width: 30px;
+cursor: pointer;
+}
+</style>
 </head>
 <body>
-    <h2>Book Catalouge</h2>
-    <table>
-        <tr>
-            <th>Book ID</th>
-            <th>description</th>
-            <th>Add to cart</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td><img src="https://m.media-amazon.com/images/I/61dpLaOyAAL._SX342_SY445_ControlCacheEqualizer_.jpg" alt="Book 1" width="100"></td>
-            <td class ="book-info">
-                <b>Book:</b>XML BIBLE <br>
-                <b>Author:</b> Winston<br>
-                <b>Publisher:</b> Wiley Publishing <br>
-            </td>
-        
-            <td class="price">$40.5</td>
-            <td>
-                <button class="cart-btn">
-                    <img src="cart.png" alt="Add to Cart" width="20">
-                </button>
-            </td>
-        </tr>
-        <tr>
-          <td><img src="https://m.media-amazon.com/images/I/61dpLaOyAAL._SX342_SY445_ControlCacheEqualizer_.jpg" alt="Book 1" width="100"></td>
-            <td class ="book-info">
-                <b>Book:</b>XML BIBLE <br>
-                <b>Author:</b> Winston<br>
-                <b>Publisher:</b> Wiley Publishing <br>
-            </td>
-        
-            <td class="price">$40.5</td>
-            <td>
-                <button class="cart-btn">
-                    <img src="cart.png" alt="Add to Cart" width="20">
-                </button>
-            </td>
-        </tr>
-         <tr>
-          <td><img src="https://m.media-amazon.com/images/I/61dpLaOyAAL._SX342_SY445_ControlCacheEqualizer_.jpg" alt="Book 1" width="100"></td>
-            <td class ="book-info">
-                <b>Book:</b>XML BIBLE <br>
-                <b>Author:</b> Winston<br>
-                <b>Publisher:</b> Wiley Publishing <br>
-            </td>
-        
-            <td class="price">$40.5</td>
-            <td>
-                <button class="cart-btn">
-                    <img src="cart.png" alt="Add to Cart" width="20">
-                </button>
-            </td>
-        </tr>
-    </table>
-    
+<h2>Book Catalogue</h2>
+<table>
+<tr>
+<th>Book</th>
+<th>Description</th>
+<th>Price</th>
+<th>Add to Cart</th>
+</tr>
+<!-- Book 1 -->
+<tr>
+<td>
+<img
+src="https://upload.wikimedia.org/wikipedia/en/2/27/The_C_Programming_Language_cover.jpg"
+
+alt="C Programming Book">
+</td>
+<td class="book-info">
+<b>Book:</b> C Programming <br>
+<b>Author:</b> Dennis Ritchie<br>
+<b>Publisher:</b> Prentice Hall<br>
+</td>
+<td class="price">$40.50</td>
+<td>
+<button class="cart-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Add to
+Cart">
+</button>
+</td>
+</tr>
+<!-- Book 2 -->
+<tr>
+<td><img src="https://www.madrasshoppe.com/208317-large_default/python-forbeginners-bhasin-harsh.jpg" alt="Python Book"></td>
+<td class="book-info">
+<b>Book:</b> Python for Beginners <br>
+<b>Author:</b> Guido van Rossum<br>
+<b>Publisher:</b> Kalyani Publisher<br>
+</td>
+<td class="price">$45.00</td>
+<td>
+<button class="cart-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Add to
+Cart">
+</button>
+</td>
+</tr>
+<!-- Book 3 -->
+<tr>
+<td><img src="https://m.mediaamazon.com/images/I/81BROimNPvL._AC_UF1000,1000_QL80_.jpg" alt="Java Book"></td>
+<td class="book-info">
+<b>Book:</b> Java Programming <br>
+<b>Author:</b> James Gosling<br>
+<b>Publisher:</b> Rama Publisher<br>
+</td>
+<td class="price">$80.50</td>
+<td>
+<button class="cart-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Add to Cart">
+</button>
+</td>
+</tr>
+</table>
 </body>
 </html>

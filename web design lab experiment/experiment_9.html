@@ -1,0 +1,95 @@
+<!--Dhruv Bansal (2400320100423)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #d7e8ff; /* Light blue background color */
+            background-image: url("https://picsum.photos/300/200?random=50");
+            background-repeat: repeat-x;
+            background-size: 200px 150px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .slide-container {
+            background: rgba(255, 255, 255, 0.85); /* Soft white panel */
+            padding: 25px;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 10px;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-row img {
+            border: 3px solid #333;
+            border-radius: 8px;
+        }
+
+        /* Link row */
+        .link-row {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Link states styling */
+        a:link { 
+            color: #0056ff; 
+            text-decoration: none; 
+            font-size: 22px; 
+        }
+        a:visited { 
+            color: #551a8b; 
+        }
+        a:hover { 
+            color: #ff2b2b; 
+            text-decoration: underline; 
+        }
+        a:active { 
+            color: #008000; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slide-container">
+
+        <div class="image-row">
+            <img src="https://picsum.photos/90/90?random=21" width="90">
+            <img src="https://picsum.photos/140/140?random=22" width="140">
+            <img src="https://picsum.photos/170/130?random=23" width="170">
+            <img src="https://picsum.photos/210/160?random=24" width="210">
+            <img src="https://picsum.photos/260/180?random=25" width="260">
+        </div>
+
+        <p>Click the links to test hover, visited, and active styles:</p>
+
+        <!-- NEW LINKS -->
+        <div class="link-row">
+            <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.reddit.com" target="_blank">Reddit</a>
+            <a href="https://openai.com" target="_blank">OpenAI</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

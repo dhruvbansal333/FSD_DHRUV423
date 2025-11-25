@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Slide - Dhruv Bansal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slide {
+            background: white;
+            width: 90vw;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 5px 0 10px;
+            font-size: 18px;
+        }
+
+        img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            margin-bottom: 8px;
+        }
+
+        .skills-box, .projects-box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 6px 12px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slide">
+
+        <!-- About -->
+        <div class="section">
+            <h3>About Me</h3>
+            <img src="https://picsum.photos/200?random=32" alt="Profile Image">
+            <p id="text">Hi, I am <b>Dhruv Bansal</b>.</p>
+            <button onclick="change()">Change Text</button>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h3>Skills</h3>
+            <div class="skills-box">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>C++</div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h3>Projects</h3>
+            <div class="projects-box">
+                <div>Calculator</div>
+                <div>Portfolio</div>
+                <div>To-Do App</div>
+                <div>Login Page</div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section">
+            <h3>Contact</h3>
+            <p>Email: xxxxx@example.com</p>
+            <p>Phone: xxxxxxxx</p>
+        </div>
+
+    </div>
+
+    <script>
+        function change() {
+            document.getElementById("text").innerHTML =
+                "Thanks for checking out my portfolio slide!";
+        }
+    </script>
+
+</body>
+</html>
