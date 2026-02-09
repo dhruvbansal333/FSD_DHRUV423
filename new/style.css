@@ -1,0 +1,43 @@
+:root{
+    --col1:#007A74;
+    --col2:#00FFBF;
+    --col3:#004225;
+
+
+}
+.boxes{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    color: azure;
+    flex-direction: row-reverse;
+}
+.box{
+    width:100px;
+    height:100px;
+    border: 1px solid black;
+    color: azure;
+    background-color: var(--col1,blue);
+    
+}
+.box2{
+    width: 300px;
+    height:300px;
+    border: 1px solid black;
+    background-color: var(--col1,blue);
+
+}
+.box3{
+    width: 300px;
+    height:300px;
+    border: 1px solid black;
+    background-color: var(--col2,blue);
+
+}
+.box4{
+    width: 300px;
+    height:300px;
+    border: 1px solid black;
+    background-color: var(--col3,blue);
+
+}
